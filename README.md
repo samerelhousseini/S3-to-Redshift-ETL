@@ -3,7 +3,7 @@
 
 This project uses boto3 library to instantiate a Redshift cluster programmatically (IaC), and uses the Python Postgres library psycopg2 to execute queries on the Redshift cluter.
 
-The data resides in S3 objects as JSON files, and so the SQL scripts use the COPY command in Redshift to import all data. 
+The data resides in S3 objects as JSON files, and so the SQL scripts use the COPY command in Redshift to import all data. Data is loaded from S3 into staging tables in Redshift, then dimensional tables and a fact table are created in Redshift out of the staging tables
 
 
 
