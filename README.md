@@ -1,6 +1,11 @@
 # Data Warehouse Project
 # Redshift ETL
 
+This project uses boto3 library to instantiate a Redshift cluster programmatically (IaC), and uses the Python Postgres library psycopg2 to execute queries on the Redshift cluter.
+
+The data resides in S3 objects as JSON files, and so the SQL scripts use the COPY command in Redshift to import all data. 
+
+
 
 ## User Guide
 
